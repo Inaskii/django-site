@@ -1,0 +1,63 @@
+{% load static%}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style2.css">
+    <title>Socioeducação</title>
+</head>
+<body>
+    <header>
+        <h1>Socioeducação</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="conceitual">Mapa conceitual</a></li>
+            <li><a href="avaliacao">Avaliação</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <div id="main-container">
+            <h1>Avaliação Socioeducação</h1>
+            <form id="form" method="post">
+                <div class="full-box">
+                    <label for="Seu nome">Nome</label>
+                    <input type="text" name="name"  placeholder="Digite seu nome" >
+                </div> 
+                <div class="full-box">
+                    <label for="matrícula">Matrícula</label>
+                    <input type="text" name="matrícula"  placeholder="Digite seu Matrícula" id = "matrícula">
+                </div>
+                <div class="full-box">
+                    <label for="Seu nome">P1</label>
+                    <textarea name="r1" rows="10" cols="70" ></textarea><br>
+                </div>
+                <div class="full-box">
+                    <label for="Seu nome">P2</label>
+                    <textarea name="r2" rows="10" cols="70" ></textarea><br>
+                </div>
+                <div class="full-box">
+                    <label for="Seu nome">P3</label>
+                    <textarea name="r3" rows="10" cols="70" ></textarea><br>
+                </div>
+                <div class="full-box">
+                    <label for="Seu nome">P4</label>
+                    <textarea name="r4" rows="10" cols="70" ></textarea><br>
+                </div>
+                <div class="full-box">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Socioeducação. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
