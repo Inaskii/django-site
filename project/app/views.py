@@ -12,6 +12,15 @@ def conceitual(request):
 
     return render(request, 'conceitual.html')
 
+def pd(request):
+
+    return render(request, 'pd.html')
+def pp(request):
+
+    return render(request, 'pp.html')
+
+
+
 def avaliacao(request):
     if request.method == 'POST':
         name = request.POST.get('name','')
@@ -25,3 +34,7 @@ def avaliacao(request):
         return redirect('index')
     else:
         return render(request, 'avaliacao.html')
+
+def slide(request):
+    return render(request,'slide.html')
+    
